@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 	res.json({
 	    message: "Wellcome to The Clsh Of Clans API (Unofficial)",
 	    description: "This api is just a simple project for my learning stuff.",
-	    totalTroops: 27,
+	    totalTroops: troops.length,
 	    routes: [
 	        "/",
 	        "/api/troops/",
