@@ -1,7 +1,10 @@
 import express from "express";
+import cors from "cors";
 const app = express();
 const PORT = process.env.PORT || 3000;
 const alive_message = `It's alive on port ${PORT}! 🎉🚀🔥🌟🎊✨💻👾💥🙌 #ExcitingTimes 🎈🎆🌈🌌🎮🎵📡🕹️🌠💫💯🔮🤖`;
+
+app.use(cors({ origin: true }));
 
 // importing troops
 import { troops } from "./troops/troops.js";
